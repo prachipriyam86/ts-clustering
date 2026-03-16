@@ -64,7 +64,7 @@ ts-clustering/
 ## Quick Start
 
 ```bash
-git clone https://github.com/prachipriyam/ts-clustering
+git clone https://github.com/prachipriyam86/ts-clustering
 cd ts-clustering
 pip install -r requirements.txt
 
@@ -131,7 +131,7 @@ If you use this code in your work, please cite:
 
 ```
 Priyam, P. (2026). Trust & Safety Review Queue Clustering.
-GitHub. https://github.com/prachipriyam/ts-clustering
+GitHub. https://github.com/prachipriyam86/ts-clustering
 ```
 
 ---
