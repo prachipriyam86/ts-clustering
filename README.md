@@ -39,7 +39,7 @@ Reviewer Batches
 
 ## Repository Structure
 
-```
+'''
 ts-clustering/
 ├── src/
 │   ├── vertical_segmenter.py      # Layer 1: classify content by vertical
@@ -57,39 +57,39 @@ ts-clustering/
 │       └── sample_queue.csv       # Synthetic sample data
 ├── requirements.txt
 └── README.md
-```
+'''
 
 ---
 
 ## Quick Start
 
-```bash
+'''bash
 git clone https://github.com/prachipriyam86/ts-clustering
 cd ts-clustering
 pip install -r requirements.txt
 
 # Run the full pipeline on sample data
 python src/pipeline.py --input data/sample/sample_queue.csv --output batches_out.json
-```
+'''
 
 ---
 
 ## Sample Data
 
-The included `sample_queue.csv` is **synthetic** — generated to demonstrate the pipeline structure. It contains no real user content or proprietary platform data.
+The included 'sample_queue.csv' is **synthetic** — generated to demonstrate the pipeline structure. It contains no real user content or proprietary platform data.
 
 | Field | Description |
 |---|---|
-| `item_id` | Unique item identifier |
-| `vertical` | Content vertical (gaming, childrens, music, news, cooking) |
-| `flag_type` | Classifier flag (violence, spam, copyright, misleading, safe) |
-| `flag_confidence` | Classifier confidence score [0–1] |
-| `audio_signal` | Audio modality score [0–1] |
-| `visual_signal` | Visual modality score [0–1] |
-| `text_signal` | Text/metadata signal score [0–1] |
-| `channel_violation_rate` | Historical channel violation rate [0–1] |
-| `account_type` | verified / established / new / anonymous |
-| `reviewer_decision` | Ground truth label (remove / allow / escalate) |
+| 'item_id' | Unique item identifier |
+| 'vertical' | Content vertical (gaming, childrens, music, news, cooking) |
+| 'flag_type' | Classifier flag (violence, spam, copyright, misleading, safe) |
+| 'flag_confidence' | Classifier confidence score [0–1] |
+| 'audio_signal' | Audio modality score [0–1] |
+| 'visual_signal' | Visual modality score [0–1] |
+| 'text_signal' | Text/metadata signal score [0–1] |
+| 'channel_violation_rate' | Historical channel violation rate [0–1] |
+| 'account_type' | verified / established / new / anonymous |
+| 'reviewer_decision' | Ground truth label (remove / allow / escalate) |
 
 ---
 
@@ -110,7 +110,7 @@ Visual similarity ≠ policy similarity. A graphic medical procedure on a verifi
 
 The pipeline outputs per-cluster quality metrics:
 
-```json
+'''json
 {
   "cluster_id": "gaming_violence_3",
   "vertical": "gaming",
@@ -121,7 +121,7 @@ The pipeline outputs per-cluster quality metrics:
   "quality_status": "good",
   "context_frame": "Gaming | violence classifier | high confidence | 18 items"
 }
-```
+'''
 
 ---
 
@@ -138,4 +138,4 @@ GitHub. https://github.com/prachipriyam86/ts-clustering
 
 ## License
 
-MIT License. See `LICENSE` for details.
+MIT License. See 'LICENSE' for details.
