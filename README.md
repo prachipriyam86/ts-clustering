@@ -1,10 +1,5 @@
 # Trust & Safety Review Queue Clustering
 
-A reference implementation of the two-layer clustering architecture described in:
-
-> **"How I Reduced AHT and Improved Quality Simultaneously Using Clustering in Trust & Safety Review"**  
-> Prachi Priyam — Towards Data Science
-
 This repo demonstrates how to apply K-Means clustering with multimodal (text + metadata) embeddings to structure content moderation review queues — reducing context-switching overhead and improving reviewer agreement rates.
 
 ---
